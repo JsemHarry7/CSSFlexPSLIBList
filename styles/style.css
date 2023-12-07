@@ -12,6 +12,30 @@
 /* nemělo by se stát, že červená šipka v bílém kroužku překryje text perexu */ 
 
 /* text "více" je prťavý tak, až není viditelný a odkaz ">" po najetí myší je zabarven do šedé rgb(204) */
-.news {
-            display:flex;
+.main {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
 }
+.news {
+            display: flex;
+   align-items: stretch;
+   flex-direction: row;
+   gap: 0.5em;
+}
+
+.datum {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+.news .box {
+   display: flex;
+   align-items: stretch;
+   flex-direction: row;
+}
+
+
